@@ -36,7 +36,8 @@ body {
 body,
 input,
 button {
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  font-family: initial;
 }
 
 // removing the outline on any element that we make programmatically focusable

@@ -32,7 +32,8 @@ $fg-min-width: 900px;
 
 // +Fonts
 // ====================
-$f-sans-serif: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+// $f-sans-serif: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+$f-sans-serif: initial;
 $f-monospace: 'Bitstream Vera Sans Mono', Consolas, Courier, monospace;
 
 // +Colors - Utility

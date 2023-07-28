@@ -82,7 +82,8 @@
       textarea {
         @extend %t-copy-base;
 
-        font-family: 'Open Sans';
+        // font-family: 'Open Sans';
+        font-family: 'initial';
         font-style: normal;
         width: 300px;
 

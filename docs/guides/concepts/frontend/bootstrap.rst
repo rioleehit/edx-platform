@@ -51,7 +51,8 @@ details.
 For example, here is an example of a hard-coded style::
 
     .my-element {
-      font-family: "Open Sans";
+      .. font-family: "Open Sans";
+      font-family: "initial";
       color: #0000ff;
     }
 
