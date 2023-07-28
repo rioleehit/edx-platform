@@ -117,6 +117,8 @@ RUN pip install -r requirements/edx/base.txt
 
 # Install node and node modules
 RUN nodeenv /edx/app/edxapp/nodeenv --node=16.14.0 --prebuilt
+
+COPY edx-edx-bootstrap-1.0.4.tgz edx-edx-bootstrap-1.0.4.tgz
 RUN npm install ./edx-edx-bootstrap-1.0.4.tgz
 RUN npm install -g npm@8.5.x
 COPY package.json package.json
