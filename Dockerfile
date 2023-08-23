@@ -112,8 +112,8 @@ RUN python3.8 -m venv "${VIRTUAL_ENV}"
 # Install python requirements
 # Requires copying over requirements files, but not entire repository
 COPY requirements requirements
-RUN pip install -r requirements/pip.txt
-RUN pip install -r requirements/edx/base.txt
+RUN pip install -r requirements/pip.txt -i https://pypi.mirrors.ustc.edu.cn/simple/
+RUN pip install -r requirements/edx/base.txt -i https://pypi.mirrors.ustc.edu.cn/simple/
 
 # Install node and node modules
 RUN nodeenv /edx/app/edxapp/nodeenv --node=16.14.0 --prebuilt
@@ -129,7 +129,7 @@ RUN npm set progress=false && npm ci
 # The built artifacts from this stage are then copied to the development stage.
 FROM builder-production as builder-development
 
-RUN pip install -r requirements/edx/development.txt
+RUN pip install -r requirements/edx/development.txt -i https://pypi.mirrors.ustc.edu.cn/simple/
 
 # base stage
 FROM minimal-system as base
