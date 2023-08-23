@@ -19,7 +19,7 @@ define(
 
         $script(
             // 'https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js'
-            'mathjax-local.js'
+            '/mathjax/MathJax.js.js'
             + '?config=TeX-MML-AM_SVG&delayStartupUntil=configured',
             'mathjax',
             function() {

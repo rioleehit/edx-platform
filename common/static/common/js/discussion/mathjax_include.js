@@ -51,7 +51,7 @@ if (typeof MathJax === 'undefined') {
             explorer: true
         }
     };
-    vendorScript.src = 'mathjax-local.js?config=TeX-MML-AM_HTMLorMML';
+    vendorScript.src = '/mathjax/MathJax.js?config=TeX-MML-AM_HTMLorMML';
     //'https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML';
     document.body.appendChild(vendorScript);
 }

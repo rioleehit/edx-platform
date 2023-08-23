@@ -137,7 +137,7 @@
             'jquery_extend_patch': 'js/src/jquery_extend_patch',
 
             // externally hosted files
-            mathjax:'mathjax-local.js?config=TeX-MML-AM_SVG&delayStartupUntil=configured', 
+            mathjax:'/MathJax.js?config=TeX-MML-AM_SVG&delayStartupUntil=configured', 
             // 'https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_SVG&delayStartupUntil=configured', // eslint-disable-line max-len
             'youtube': [
                 // youtube URL does not end in '.js'. We add '?noext' to the path so
